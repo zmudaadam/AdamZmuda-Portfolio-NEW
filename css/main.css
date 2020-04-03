@@ -1,0 +1,591 @@
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+html{
+    scroll-behavior: smooth; 
+}
+
+body {
+    position: relative;
+    background-color: #e9ecef;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.red-text{
+    color: #dc3545;
+}
+
+.wrapper{
+    max-width: 2560px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.underline{
+    margin: 0 auto 40px;
+    width: 80px;
+    height: 4px;
+    background-color: #dc3545;
+}
+
+.scroll-fix::before{
+    content: '';
+    display: block;
+    height: 66px;
+    margin-top: -66px;
+}
+
+.visibility{
+    visibility: hidden;  
+}
+
+.jumbotron{
+    margin: 0;
+}
+
+/* NAWIGACJA */
+
+nav{
+    text-transform: uppercase;
+    -webkit-transition: background-color .6s;
+    transition: background-color .6s;
+}
+
+nav .navbar-brand{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav .navbar-brand span{
+    font-size: 26px;
+}
+
+nav a, nav i{
+    color: #ffffff;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+nav i{
+    padding: 10px;
+}
+
+nav a:hover{
+    color: #aaaaaa;
+}
+
+nav .active{
+    color: #dc3545;
+    font-weight: 500;
+}
+
+nav img{
+    transition: transform .1s;
+}
+nav img:hover{
+    transform: scale(1.2);
+}
+
+nav .navbar-nav{
+    font-weight: 400;
+}
+
+nav .navbar-nav hr{
+    background-color: #363636;
+}
+
+.shadow-bg{
+    background-color: rgba(0,0,0, .9);
+}
+
+/* HEADER */
+
+header{
+    color: #ffffff;
+    overflow: hidden;
+}
+
+header h1{
+    padding: 10px;
+    text-transform: uppercase;
+    /* font-size: 30px; */
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+header .hero-box h1 span{
+    font-size: 40px;
+}
+
+header .hero-box span{
+    font-weight: bold;
+}
+
+header .hero-img{
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/intro/code.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+header .hero-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: -1;
+}
+
+header .hero-txt{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+header .hero-txt p{
+    font-size: 22px;
+}
+
+header .btn-outline-light{
+    text-transform: uppercase;
+}
+
+header .fa-chevron-down{
+    display: none;
+}
+
+/* MAIN */
+
+#aboutme{
+    overflow: hidden;
+}
+
+#aboutme i{
+    margin-top: 20px;
+    font-size: 30px;
+}
+  
+#aboutme h3{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+  
+#aboutme p{
+    font-size: 17px;
+}
+
+#aboutme .aboutme-col{
+    text-align: center;
+}
+
+#aboutme .aboutme-hover{
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+#aboutme .aboutme-hover strong{
+    color: #dc3545;
+}
+
+#aboutme .aboutme-link{
+    text-align: center;
+}
+
+#aboutme .red-button{
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100px;
+    border: 1px solid #dc3545;
+}
+
+#aboutme .red-button:hover{
+    border: 2px solid #dc3545;
+    padding: 8px 0;
+}
+
+#about-hero .about-hero-item{
+    margin: 10px 0;
+}
+
+/* OSIĄGNIĘCIA */
+
+#achievements .jumbotron{
+    background-color: rgba(0,0,0, .9);
+    color: white;
+}
+
+#achievements .knowledge{
+    padding: 20px 0;
+}
+
+#achievements .knowledge img{
+    width: 70px;
+    max-height: 70px;
+}
+
+#achievements .knowledge-list{
+    text-align: center;
+}
+
+#achievements i{
+    font-size: 48px;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 0 3px 5px black;
+}
+
+#achievements .knowledge-text{
+    font-size: 19px;
+}
+
+/* PORTFOLIO */
+
+#portfolio .carousel-item{
+    position: relative;
+    height: 600px;
+}
+
+#portfolio .carousel-item img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption{
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+}
+
+#portfolio .carousel-indicators{
+    padding-bottom: 20px;
+}
+
+#portfolio .card-live{
+    position: relative;
+}
+#portfolio .card-live a{
+    text-decoration: none;
+    color: white;
+}
+#portfolio .card-live .link{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #db5461;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+}
+
+#portfolio .card-live:hover .link{
+    opacity: 0.9;
+}
+
+#portfolio .card-live .icon-live{
+    display: block;
+    top: 27%;
+    position: relative;
+    font-size: 50px;
+}
+
+#portfolio .card-live p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#portfolio .card-footer{
+    text-align: center;
+    background-color: #db5461;
+}
+
+#portfolio .card-footer i{
+    color: black;
+    font-size: 22px;
+    transition: transform .3s;
+}
+
+#portfolio .card-footer i:hover{
+    transform: scale(1.5);
+}
+
+/* KONTAKT */
+
+#contact .jumbotron{
+    background-color: #000000d3;
+    position: relative;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0, .9);
+    z-index: 0;
+}
+
+#contact .contact-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+#contact .jumbotron h2{
+    color: white;
+}
+
+#contact .contact-us{
+    color: white;
+    display: flex;
+}
+
+#contact .contact-item{
+    margin: 30px 0; 
+}
+
+#contact .contact-us .contact-item h3{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#contact .contact-us .contact-item p{
+    letter-spacing: 2px;
+}
+
+#contact .contact-us .contact-item a{
+    text-decoration: none;
+    color: white;
+}
+
+#contact .contact-us .contact-item a:hover{
+    color: #dc3545;
+}
+
+#contact .contact-us .contact-item .social-media{
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+#contact .contact-us .contact-item .social-media a{
+    padding: 10px;
+    color: white;
+}
+
+#contact .contact-us .contact-item .social-media a:hover{
+    color: #dc3545;
+}
+
+#contact .contact-us .contact-item .social-media i{
+    transition: transform .3s;
+}
+
+#contact .contact-us .contact-item .social-media i:hover{
+    transform: scale(1.3);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+   
+}
+
+footer p{
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Cookies */
+
+#cookies-message{ 
+    padding: 12px 10px; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0px; 
+    left: 0; 
+    right: 0; 
+    background-color: rgba(0,0,0,0.8); 
+    z-index: 100000; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.4); 
+    display: none;
+}
+
+#cookies-message p{
+    margin: 0;
+    color: #ffffff; 
+}
+
+#cookies-message a{
+    text-decoration: none;
+    color: white;
+}
+
+#cookies-message .btn-cookies{ 
+    background-color: #dc3545; 
+    color: #ffffff; 
+    border: 1px solid #ffffff; 
+    transition: all 0.5s; 
+    padding: 2px 30px; 
+    display: inline-block; 
+    margin-left: 10px; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+#cookies-message .btn-cookies:hover{ 
+    background-color: transparent; 
+    border-color: white;
+    border: 1px solid #dc3545;
+}
+
+@media (min-width: 375px){
+    header h1{
+        font-size: 42px;
+    }
+    
+    header .hero-box h1 span{
+        font-size: 55px;
+    }
+
+    header .hero-txt p{
+        font-size: 26px;
+    }
+    
+    #aboutme-hero .jumbotron h2{
+        font-size: 36px;
+    }
+
+    #aboutme-hero .jumbotron h3{
+        font-size: 32px;
+    }
+    
+    #aboutme-hero .jumbotron p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 414px){    
+    #aboutme-hero .jumbotron{
+        padding: 80px 0;
+    }
+}
+
+@media (min-width: 500px){    
+    #team .card-body{
+        height: 120px;
+    }
+}
+
+@media  (max-width: 1000px){
+    nav{
+         background-color: rgba(0, 0, 0, 0.9);   
+    } 
+
+    nav .navbar-nav hr{
+        margin: 7px;
+    }
+}
+
+.social-bar{
+    position: fixed;
+    top: 25%;
+    z-index: 1000;
+}
+
+.social-bar ul{
+    list-style-type: none;
+    padding: 0;
+    transform: translateX(-270px);
+}
+
+.social-bar ul li{
+    display: block;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 313px;
+    text-align: right;
+    padding: 5px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+}
+
+.social-bar ul li:hover{
+    transform: translateX(90px);
+}
+
+.social-bar ul li.social-1:hover{
+    background-color: #dc3545;
+}
+
+.social-bar ul li.social-2:hover{
+    background-color: #dc3545;
+}
+
+.social-bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.social-bar ul li i{
+    text-align: center;
+    margin-left: 14px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    transform: rotate(0deg);
+
+}
+
+.social-bar ul li:hover i{
+    transform: rotate(360deg);
+    transition: all 1s;
+}

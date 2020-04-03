@@ -1,0 +1,45 @@
+header h1{
+    font-size: 50px;
+}
+
+header .hero-box h1 span{
+    font-size: 65px;
+}
+
+header .hero-txt p{
+    font-size: 33px;
+}
+
+#aboutme .wrapper .aboutme-col{
+    column-count: 2;
+    -webkit-column-count: 2;
+    max-height: 520px;
+    
+    text-align: justify;
+}
+
+#achievements .knowledge img{
+    transition: transform .3s;
+    opacity: .8;
+}
+
+#achievements .knowledge img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#prices .price-info{
+    font-size: 23px;
+}
+
+#prices .price-wrap{ 
+    width: 90%;
+}
+
+#team .card-body{
+    height: 150px;
+}
+
+/* @media (min-width: 768px) {
+    
+} */
